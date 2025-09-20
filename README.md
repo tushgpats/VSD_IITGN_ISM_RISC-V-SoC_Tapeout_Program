@@ -55,7 +55,7 @@ By eliminating dependency on foreign-controlled IP, RISC-V empowers countries to
 This democratization of processor design opens the VLSI world to universities, startups, and emerging economies that previously couldn’t afford ARM or x86 licensing costs. 
 In this sense, RISC-V is not just a technical innovation but also a geopolitical and economic force, redistributing access to advanced silicon design and enabling broader participation in the semiconductor ecosystem.
 
-## Impact of Opensourse and Open Standard on Business and Commerece
+## Impact of Opensource and Open Standard on Business and Commerece
 
 Open-source EDA tools like Yosys, GTKWave, Ngspice, and OpenLane, combined with open-standard ISAs like RISC-V, are reshaping the business and economic landscape of semiconductors.
 For startups, the most obvious benefit is the drastic reduction in entry barriers: costly proprietary EDA licenses and IP royalties are often prohibitive, but open-source ecosystems allow small teams to prototype SoCs and ASICs with minimal upfront cost. 
