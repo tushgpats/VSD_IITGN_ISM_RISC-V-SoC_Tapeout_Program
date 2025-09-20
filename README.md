@@ -103,5 +103,7 @@ So without much Futher A do Lets get down to Actual Engineering.
 ## 🙏 Acknowledgment
 
 I would Like to acknowledge Kunal Ghosh and his team from VSD for the Opportunity to work on this Tapeout Program.
+
 I would Also like to Thank Prof Rajat Moona and his Team From IIT Gandhinagar For their Support to this noble initiative.
+
 I would also extend thanks to SCL Chandigarh and Chip Foundry for thier immense Support for this endevour.
