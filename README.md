@@ -11,14 +11,15 @@ roughly 15.4%. Key growth drivers include the expanding use of semiconductors in
 market share. 
 
 
-<img width="1600" height="1200" alt="global_semiconductor_market" src="https://github.com/user-attachments/assets/fca77293-ba92-4704-9851-e9d6f1b3c65a" />
+<img width="1600" height="1200" alt="corrected_global_market" src="https://github.com/user-attachments/assets/a33737bc-846e-4468-9db2-94eb9c35bbf2" />
 
 
 India's semiconductor consumption market was USD 52 billion in 2024-25 and is projected to reach USD 103.4 billion by 2030 with a CAGR of Approximately 13%., 
 driven by surging domestic demand in sectors like mobile, IT, and industrial applications.
 
 
-<img width="1600" height="1200" alt="indian_semiconductor_market" src="https://github.com/user-attachments/assets/4bd6039a-d9cf-4dbf-a6e6-6f380690dbb4" />
+<img width="1600" height="1200" alt="corrected_indian_market" src="https://github.com/user-attachments/assets/aa9e8f4b-5c47-4473-b7db-663bd80c514b" />
+
 
 ## OpenSource and OpenStandard
 
