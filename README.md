@@ -65,6 +65,10 @@ The way forward lies in building stronger collaborative ecosystems—government 
 
 ## Market Data Framework.
 
+<img width="1400" height="1400" alt="tam_to_sam_pie" src="https://github.com/user-attachments/assets/baf412cc-b1ae-4a71-b8a9-325f1f48bbb6" />  <img width="1400" height="1400" alt="sam_to_som_pie" src="https://github.com/user-attachments/assets/9d0d77b3-b392-4ab5-9649-cb217cd41e9c" />
+
+
+The TAM→SAM and SAM→SOM Pie Charts illustrate how startups can position themselves in the semiconductor ecosystem. While the Total Addressable Market (TAM) is massive at USD 681B+, the Serviceable Available Market (SAM) for open-source and RISC-V solutions is a smaller but fast-growing USD 2–3B. Within this, the Serviceable Obtainable Market (SOM) represents realistic capture opportunities of USD 100–300M for startups targeting IoT, AI, and niche applications.
 
 ## Impact of Opensourse and Open Standard on Geopolitics
 Open-source EDA tools (Yosys, Ngspice, OpenLane) and open-standard ISAs like RISC-V have the potential to reshape geopolitics in the same way OPEC and crude oil shaped global power in the 1960s. 
