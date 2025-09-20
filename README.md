@@ -79,8 +79,8 @@ This shifts the balance: instead of a few Western firms acting as gatekeepers, i
 For emerging economies, open ecosystems mean participation in the semiconductor supply chain without paying billions in licensing costs, reducing dependency and enabling sovereign design capability.
 
 
-Thank you for bearing with me while i took a quick detour to touch on multiple aspects of Semiconductors that are generally overlooked by engineers. 
-It is just that i strongly believe that the key problem in todays industry is not expertise but the ability to think in cross functional domains.
+#### Thank you for bearing with me while i took a quick detour to touch on multiple aspects of Semiconductors that are generally overlooked by engineers. 
+#### It is just that i strongly believe that the key problem in todays industry is not expertise but the ability to think in cross functional domains.
 India’s semiconductor ecosystem is fractured by domain silos.
 But here’s the deeper issue:
 Engineers rarely understand the law.
@@ -91,13 +91,13 @@ Until we cultivate multi-disciplinary thinkers who understand chip design, semic
 India will be assembling parts of a machine it doesn’t fully control.
 We need systems thinkers who can move between disciplines and align them.
 
-So without much Futher A do Lets get down to Actual Engineering.
+#### So without much Futher Ado Lets get down to Actual Engineering.
 
 ## Weekly Progress and Implementation
 
 | Task | Description | Status |
 |------|-------------|---------|
-| [**Task 0**](Week0/Task0/README.md) | 🛠️ [Tools Installation](Week0/Task0/README.md) — Sucessfully Installed **Iverilog**, **Yosys**, and **gtkWave** | ✅ |
+| [**Task 0**](Week0/Task0/README.md) | 🛠️ [Tools Installation](Week0/Task0/README.md) — Sucessfully Installed **Iverilog**, **Yosys**, and **gtkwave** | ✅ |
 
 
 ## 🙏 Acknowledgment
@@ -106,4 +106,4 @@ I would Like to acknowledge Kunal Ghosh and his team from VSD for the Opportunit
 
 I would Also like to Thank Prof Rajat Moona and his Team From IIT Gandhinagar For their Support to this noble initiative.
 
-I would also extend thanks to SCL Chandigarh and Chip Foundry for thier immense Support for this endevour.
+I would also extend thanks to SCL Chandigarh and Chip Foundry for their immense Support for this endevour.
