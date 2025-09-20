@@ -80,8 +80,9 @@ This shifts the balance: instead of a few Western firms acting as gatekeepers, i
 For emerging economies, open ecosystems mean participation in the semiconductor supply chain without paying billions in licensing costs, reducing dependency and enabling sovereign design capability.
 
 
-#### Thank you for bearing with me while i took a quick detour to touch on multiple aspects of Semiconductors that are generally overlooked by engineers. 
-#### It is just that i strongly believe that the key problem in todays industry is not expertise but the ability to think in cross functional domains.
+#### Thank you for bearing with me for so long while i took a detour to touch on multiple aspects of Semiconductor Industry that are generally overlooked by engineers. 
+#### I strongly believe that the key challenge in today’s VLSI industry is not a lack of expertise, but the ability to think across multiple functional domains
+
 India’s semiconductor ecosystem is fractured by domain silos.
 But here’s the deeper issue:
 Engineers rarely understand the law.
@@ -97,7 +98,7 @@ We need systems thinkers who can move between disciplines and align them.
 
 #### I will be also touching up on any possible IP Law Implications or Business insights as and when they seem evident in the course of this Journey.
 
-## Weekly Progress and Implementation
+## Weekly Progress and Lab Implementation Tracking
 
 | Task | Description | Status |
 |------|-------------|---------|
