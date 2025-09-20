@@ -105,6 +105,6 @@ We need systems thinkers who can move between disciplines and align them.
 
 I would Like to acknowledge **Kunal Ghosh** and his team from **[VSD](https://vsdiat.vlsisystemdesign.com/)** for the Opportunity to work on this Tapeout Program.
 
-I would Also like to Thank Prof Rajat Moona and his Team From IIT Gandhinagar For their Support to this noble initiative.
+I would Also like to Thank **Prof Rajat Moona** and his Team From IIT Gandhinagar **[Indian Institute of Technology Gandhinagar (IIT-GN)](https://iitgn.ac.in//)** For their Support to this noble initiative.
 
 I would also extend thanks to SCL Chandigarh and Chip Foundry for their immense Support for this endevour.
