@@ -98,7 +98,7 @@ We need systems thinkers who can move between disciplines and align them.
 
 | Task | Description | Status |
 |------|-------------|---------|
-| [**Task 0**](Week0/Task0/README.md) | 🛠️ [Tools Installation](Week0/Task0/README.md) — Sucessfully Installed **Iverilog**, **Yosys**, and **gtkwave** | ✅ |
+| [**Task 1**](Week0/Task0/README.md) | 🛠️ [Tools Installation](Week0/Task0/README.md) — Sucessfully Installed **Iverilog**, **Yosys**, and **gtkwave** | ✅ |
 
 
 ## 🙏 Acknowledgment
