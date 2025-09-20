@@ -38,24 +38,24 @@ $ make
 $ sudo make install
 ```
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic7" src="https://github.com/user-attachments/assets/1ab88adf-d77c-49c0-b6aa-dd930e96640d" />
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic8" src="https://github.com/user-attachments/assets/b753881e-d643-4357-be97-7a04039302f0" />
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic9" src="https://github.com/user-attachments/assets/ee761fea-a16f-4740-8c41-7eebd900687a" />
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic10" src="https://github.com/user-attachments/assets/8af448ac-e5f2-49f0-a4e9-304da81b6b0a" />
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic11" src="https://github.com/user-attachments/assets/434165c9-edbe-4a59-991d-d8baf44e4efd" />
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic20" src="https://github.com/user-attachments/assets/7426cda9-e3e4-444a-9eb9-0c44212d6774" />
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic22" src="https://github.com/user-attachments/assets/1c307144-26ad-4404-b35b-74f0d803da3d" />
 
 
 #### And Voila !!!
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic23" src="https://github.com/user-attachments/assets/304a2257-3d29-42d5-ab35-892808de6c8a" />
-
+<br><br>
 
 You may encounter issues with Bison version mismatching. Its Very easy to fix though. Just Download Bison from web using the wget command and installing it manually will fix the problem.
 
@@ -73,12 +73,11 @@ $ sudo apt-get update
 $ sudo apt-get install iverilog
 ```
 
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic25" src="https://github.com/user-attachments/assets/d1ce241c-9623-4e09-a13a-97abfbf7a2fe" />
-
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic26" src="https://github.com/user-attachments/assets/112ee510-2d75-4c7e-af8b-db7d0c33b969" />
-
+<br><br>
 
 
 ### <ins>**gtkwave**</ins>
@@ -94,13 +93,11 @@ $ sudo apt-get update
 $ sudo apt install gtkwave
 ```
 
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic27" src="https://github.com/user-attachments/assets/d5a9459f-595f-4054-8c7c-380172e56867" />
-
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic29" src="https://github.com/user-attachments/assets/c8595749-5c87-4d4e-b169-29f6c7671ccf" />
-
-
+<br><br>
 <img width="960" height="540" alt="VSD_IITGN_RISC-V_Tapeout_Week0_Task0_pic30" src="https://github.com/user-attachments/assets/dde2eeb5-a093-41de-97a5-dbcaf54baa34" />
 
 
