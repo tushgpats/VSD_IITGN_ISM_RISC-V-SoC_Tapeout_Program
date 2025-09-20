@@ -2,7 +2,7 @@
 This program is an joint initiative Between VSD and IIT-Gandginagar and supported by SCL chandigarh and C2S program of Misistry of Electronics and IT. This Program aims to takes 
 participants through the full journey of SoC design, from RTL to GDSII, using open-source as well as Industry standard EDA tools in the course of 20 weeks.
 
-Now before we dig deep, let us dive deep into the significance of Semiconductors and Opensource Tools and Open Standard specifications.
+Now before we get into the Engineering aspects of VLSI Flow and corresponding tapeout, let us have a look into the significance of Semiconductor Industry as well as Opensource Tools and Open Standard specifications as well as its implications on Business, IP Law and Geopolitics.
 
 ## Growth trends of Semiconductor Industry
 
@@ -29,7 +29,7 @@ open standard refers to a publicly available specification or protocol that anyo
 In other words, open source is about the implementation being open, whereas open standard is about the rules or specifications being open. 
 For example, the RISC-V ISA is an open standard, and tools like Yosys or Openlane are open source. The two often complement each other, but they are not the same.
 
-## Implications of Open Source and Open Standard in IP Law
+## Implications of Open Source and Open Standard ISAs in IP Law
 
 Open source and open standard are often confused, but this distinction carries big consequences in IP law.
 Misunderstanding this difference can lead to situations where engineers assume that “open” automatically means “free of restrictions,” which is not true in law.
@@ -71,7 +71,7 @@ The way forward lies in building stronger collaborative ecosystems—government 
 
 The TAM→SAM and SAM→SOM Pie Charts illustrate how startups can position themselves in the semiconductor ecosystem. While the Total Addressable Market (TAM) is massive at USD 681B+, the Serviceable Available Market (SAM) for open-source and RISC-V solutions is a smaller but fast-growing USD 2–3B. Within this, the Serviceable Obtainable Market (SOM) represents realistic capture opportunities of USD 100–300M for startups targeting IoT, AI, and niche applications.
 
-## Impact of Opensourse and Open Standard on Geopolitics
+## Impact of OpenSource EDA Tools and Open Standard ISAs on Geopolitics
 Open-source EDA tools (Yosys, Ngspice, OpenLane) and open-standard ISAs like RISC-V have the potential to reshape geopolitics in the same way OPEC and crude oil shaped global power in the 1960s. 
 In today’s world, semiconductors are the “new oil” — central to defense, AI, communications, and economic competitiveness. Traditionally, access to advanced semiconductor design was locked behind expensive proprietary tools (Synopsys, Cadence, Mentor) and proprietary ISAs (ARM, x86), both of which are controlled largely by U.S. and its allies with the exception of French republic which very frequently sides with its own strategic autonomy rather than being reticent to US Policies.
 This has given the U.S. enormous leverage as seen in sanctions on China,Russia where restricting access to EDA software or processor IP can halt entire industries.
