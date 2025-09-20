@@ -93,6 +93,9 @@ India will be assembling parts of a machine it doesn’t fully control.
 We need systems thinkers who can move between disciplines and align them.
 
 #### So without much Futher Ado Lets get down to Actual Engineering.
+<br>
+
+#### I will be also touching up on any possible IP Law Implications or Business insights as and when they seem evident in the course of this Journey.
 
 ## Weekly Progress and Implementation
 
