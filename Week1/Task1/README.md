@@ -221,7 +221,19 @@ Designers often use a hybrid strategy—synthesizing critical blocks flat while 
 
 <img width="960" height="540" alt="Week1day2pic16" src="https://github.com/user-attachments/assets/4db6015b-ae7b-4160-b57b-edf6b4756c2e" />
 
-
+<br></br>
+We will now discuss how to flatten a Design and How the Synthesized Design Looks after Flattening.
+<br></br>
+But First Let us dive deep into Flattening of a Design and why we might prefer it over Heirarchial Synthesis.
+Flattening a hierarchical design means breaking down these module boundaries so that the entire design is treated as a single-level (flat) netlist. All submodules are expanded in-
+line, allowing the synthesis tool to view the entire circuit globally. This enables more aggressive optimizations such as constant propagation across module boundaries, removal of 
+redundant logic, sharing of common sub-expressions, and better technology mapping.
+<br></br>
+Flattening is done primarily to improve quality of results (QoR)—including timing, area, and power
+However, flattening comes at a cost: the netlist becomes much larger, losing clear module structure, which makes debugging harder and runtime/memory requirements higher. For very 
+large SoCs, fully flat synthesis is impractical, so designers often use a hybrid approach: keep non-critical or reusable IPs hierarchical, while flattening timing-critical logic for 
+maximum optimization.
+<br></br>
 <img width="960" height="540" alt="Week1day2pic17" src="https://github.com/user-attachments/assets/2adc7f53-2bf3-4c48-ac77-24176cd7e700" />
 
 
