@@ -260,7 +260,13 @@ maximum optimization.
 
 ### Day 3 Labs: Combinational and sequential optmizations ###
 <br></br>
+#### Combinational Optimizations in Synthesis ####
+Combinational optimization focuses on reducing the complexity, delay, and power of logic that does not involve memory elements. Synthesis tools apply techniques such as Boolean simplification, constant propagation, dead code elimination, and common sub-expression sharing to minimize the number of gates. For example, redundant logic like (a & b) | (a & b & c) can be reduced to (a & b). Tools also perform logic restructuring (reordering AND/OR trees), gate sizing, and mux optimizations to reduce critical path delay. The goal is to improve area, timing, and power efficiency while maintaining functional equivalence with the RTL.
 
+#### Sequential Optimizations in Synthesis ####
+Sequential optimization, on the other hand, targets logic involving flip-flops, latches, and state elements. Key techniques include retiming (moving flops across combinational logic to balance path delays), sequential constant propagation (removing registers fed by constants), merging equivalent registers, and removing unused flops. These optimizations help fix timing violations, reduce pipeline depth where possible, and minimize unnecessary switching activity. Sequential optimizations are especially important in high-speed designs, where balancing setup and hold times across critical paths is essential. Together with combinational optimizations, they ensure the design achieves the best possible PPA (Power, Performance, Area) while preserving correctness.
+
+<br></br>
 <img width="960" height="540" alt="Week1day3pic1" src="https://github.com/user-attachments/assets/7303fac2-7227-4a97-8aba-06722f70486f" />
 
 
@@ -389,6 +395,16 @@ maximum optimization.
 
 <img width="960" height="540" alt="Week1day3pic43" src="https://github.com/user-attachments/assets/681baa69-3a5d-4bb1-beff-ffedf7cc5e21" />
 
+
+<br></br>
+
+#### Sequential Optimizations for Unused Outputs ####
+
+In many RTL designs, certain registers or outputs are defined but never actually used in the functional design—either because they were part of a parameterized block, a leftover debug 
+signal, or a feature that was later disabled. During synthesis, such registers and their associated logic become candidates for removal. Sequential optimization techniques identify 
+these unused outputs and safely eliminate the corresponding flops, latches, or even portions of FSMs, since they do not contribute to observable behavior at the primary outputs.
+This optimization improves area, power, and timing by reducing unnecessary sequential elements that would otherwise switch pointlessly and consume energy.
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic44" src="https://github.com/user-attachments/assets/c046861f-b503-4134-88ff-1b88c57e9f57" />
 
