@@ -145,10 +145,51 @@ This command launches Yosys’s built-in schematic viewer, allowing you to visua
 
 <img width="960" height="540" alt="Week1day1pic20" src="https://github.com/user-attachments/assets/93575f0f-210b-42b0-835a-361a92d272b1" />
 
-
+<br></br>
 ### Day 2 Labs: Introduction to Timing libs, hierarchical vs flat synthesis and efficient flop coding styles ### 
 <br></br>
 
+Timing libraries are the foundation of digital synthesis, providing the logical, electrical, and timing characteristics of standard cells that allow tools to map RTL into real hardware while meeting delay and power constraints. When synthesizing, designers can choose between hierarchical synthesis, which preserves module boundaries for easier debug and reuse, or flat synthesis, which collapses everything into one level for more global optimization at the cost of runtime and memory. Alongside this, efficient flop coding styles—such as always using non-blocking assignments (<=) in sequential blocks, coding resets and enables consistently, and avoiding unnecessary latches—help ensure clean mapping to standard cells, predictable timing behavior, and optimal quality of results (QoR) across the design flow.
+<br></br>
+
+#### Key Takeaways on .lib files###
+<br></br>
+The .lib files are used to read to map generic gates into real cells, using area and delay trade-offs. A timing library (commonly a .lib file in Liberty format) describes the characteristics of standard cells in a given semiconductor technology. It is provided by the foundry or PDK vendor and acts as a database that synthesis, simulation, and STA tools use to model real hardware.
+
+It is not RTL or gate-level netlist itself, but a reference of cell behaviors, including:
+
+- Logic functionality (e.g., NAND2, DFF, MUX).
+-Area (relative silicon size).
+-Timing (propagation delays, setup/hold times, recovery/removal times).
+-Power (dynamic, leakage, internal).
+-Pin information (direction, capacitance, slew effects).
+
+The most critical part of a .lib file is timing arcs and constraints:
+-Propagation delays: Input-to-output delays for rising and falling transitions.
+-Setup & Hold times: Requirements for flip-flop/latch inputs relative to clock edges.
+-Clock-to-Q delay: Delay between clock arrival and data appearing at the Q output of a sequential cell.
+-Recovery & Removal times: Requirements for asynchronous signals (reset, set).
+-Slew degradation: Models how slow input transitions worsen timing.
+
+Types of Timing Libraries usually multiple libraries are provided by vendors to represent different corners:
+
+-Typical (TT) → Nominal process, voltage, and temperature.
+-Slow-Slow (SS) → Worst-case corner (slow transistors, low VDD, high temperature). Used for setup checks.
+-Fast-Fast (FF) → Best-case corner (fast transistors, high VDD, low temperature). Used for hold checks.
+
+<br></br>
+#### PVT corners ####
+PVT corners represent the different operating conditions under which a chip must function reliably, and they are captured in multiple versions of timing libraries (.lib files). Process (P) refers to manufacturing variations in transistor speed—cells may be “slow” (SS) due to weaker drive strength or “fast” (FF) due to higher mobility, with “typical” (TT) representing nominal behavior. Voltage (V) accounts for fluctuations in supply rails, where lower voltages slow down circuits and higher voltages speed them up. Temperature (T) models the impact of heat, with higher temperatures generally increasing delay and leakage. Foundries combine these into specific corners such as SS_0.72V_125C signifying worst-case: slow process, low voltage, high temperature for setup timing checks, and FF_0.9V_-40C signifying best-case: fast process, high voltage, low temperature for hold timing checks. By analyzing across all relevant PVT corners, synthesis and STA ensure the design is robust against variations in manufacturing, power supply, and environment.
+<br></br>
+
+Important Note : Wider Cells consume more power and occupy more area but have lesser delay on the flip side, making them essential for fixing timing violations on critical paths
+while carefully balancing power and area trade-offs.
+
+#### power–performance–area (PPA) trade-off: ####
+-Use narrower (weaker) cells where speed is less critical, saving power and area.
+-Use wider (stronger) cells sparingly on timing-critical paths, where reducing delay is more important than saving power.
+
+<br></br>
 <img width="960" height="540" alt="Week1day2pic10" src="https://github.com/user-attachments/assets/fb6541ea-3405-4e71-91bf-75aeaea174c2" />
 
 
