@@ -282,42 +282,64 @@
 <img width="960" height="540" alt="Week1day4pic11" src="https://github.com/user-attachments/assets/1b98af58-4b65-460a-9c45-6f66aad56499" />
 
 
+<img width="960" height="540" alt="Week1day4pic12" src="https://github.com/user-attachments/assets/017ff17b-6bb5-4aea-ba47-fcea1b8d33af" />
 
 
+<img width="960" height="540" alt="Week1day4pic13" src="https://github.com/user-attachments/assets/94099b6a-04b1-4672-868b-f69b017ba7bb" />
 
 
+<img width="960" height="540" alt="Week1day4pic14" src="https://github.com/user-attachments/assets/1ac880e8-c75b-493e-a624-169c0ff7f14c" />
 
 
+<img width="960" height="540" alt="Week1day4pic15" src="https://github.com/user-attachments/assets/bf63867d-bb55-4f56-bfd0-1fabefde23d9" />
 
 
+<img width="960" height="540" alt="Week1day4pic16" src="https://github.com/user-attachments/assets/c33625f0-7773-40b3-b222-c9041a65cd35" />
 
 
+### Day 5 Labs ###
 
 
+<img width="960" height="540" alt="Week1Day5pic1" src="https://github.com/user-attachments/assets/66e3f71b-66de-41ed-a6a2-c2ffb883ff04" />
 
 
+<img width="960" height="540" alt="Week1Day5pic2" src="https://github.com/user-attachments/assets/1ec23302-8537-48f3-9893-0b45066d7a43" />
 
 
+<img width="960" height="540" alt="Week1Day5pic3" src="https://github.com/user-attachments/assets/69bebec7-4518-4f33-b80f-c421ca6b1c9a" />
 
 
+<img width="960" height="540" alt="Week1Day5pic4" src="https://github.com/user-attachments/assets/a8c8ceab-bb62-420f-b9f8-45520fb8b85c" />
 
 
+<img width="960" height="540" alt="Week1Day5pic5" src="https://github.com/user-attachments/assets/6852a25c-91c7-4dac-a3ac-3b0485cce008" />
 
 
+<img width="960" height="540" alt="Week1Day5pic6" src="https://github.com/user-attachments/assets/17d82e56-1b5f-4d66-97aa-98b66717b17f" />
 
 
+<img width="960" height="540" alt="Week1Day5pic7" src="https://github.com/user-attachments/assets/a550f4d9-9c64-4047-b009-b6893df61805" />
 
 
+<img width="960" height="540" alt="Week1Day5pic8" src="https://github.com/user-attachments/assets/bf30ea49-b202-4c37-a491-9977d4cd499d" />
 
 
+<img width="960" height="540" alt="Week1Day5pic9" src="https://github.com/user-attachments/assets/f289e39b-a683-4203-b4b8-2d042cc5a8fd" />
 
 
+<img width="960" height="540" alt="Week1Day5pic10" src="https://github.com/user-attachments/assets/4520e47f-0a92-43be-bf2f-5fb1f7eb086c" />
 
 
+<img width="960" height="540" alt="Week1Day5pic11" src="https://github.com/user-attachments/assets/362cb16f-f609-41b1-9255-b08834dd294c" />
 
 
+<img width="960" height="540" alt="Week1Day5pic12" src="https://github.com/user-attachments/assets/20c51c18-9a37-402f-bb92-c30669f8e610" />
 
 
+<img width="960" height="540" alt="Week1Day5pic13" src="https://github.com/user-attachments/assets/a9607efd-9d40-454e-be4b-8fec33e5eb3c" />
+
+
+<img width="960" height="540" alt="Week1Day5pic14" src="https://github.com/user-attachments/assets/b9093909-2807-457e-8575-52f50e5d1ff0" />
 
 
 
