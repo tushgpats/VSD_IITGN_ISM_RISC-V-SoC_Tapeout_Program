@@ -38,16 +38,76 @@ So we Will First Download the Github Repo which has all the nescessary files. We
 
 <img width="960" height="540" alt="Week1day1pic2" src="https://github.com/user-attachments/assets/c9243891-0524-499e-80f1-f8f2d7ace275" />
 
+<br></br>
+```bash
+iverilog design.v testbench.v
+./a.out
+gtkwave testbench.vcd
+```
+Now let us have a walkthough using a simple design called good_mux.v and observe the waveform.
+<br></br>
+
 <img width="960" height="540" alt="Week1day1pic3" src="https://github.com/user-attachments/assets/28c43e29-d413-4df5-af0c-1326a497913b" />
 
 <img width="960" height="540" alt="Week1day1pic4" src="https://github.com/user-attachments/assets/b113ab85-e85f-4917-8fac-0ca4e11afd40" />
 
 <img width="960" height="540" alt="Week1day1pic5" src="https://github.com/user-attachments/assets/a1b5c824-b11e-4536-8f01-aae08f300c68" />
-
+<br></br>
+Now Let us have a look at the Verilog and the Test bench Files and see what they contain.
+<br></br>
 <img width="960" height="540" alt="Week1day1pic6" src="https://github.com/user-attachments/assets/676c8a51-6ade-49c3-a720-e8bfaf10f7f2" />
 
 <img width="960" height="540" alt="Week1day1pic7" src="https://github.com/user-attachments/assets/5c77317a-114d-4ea2-b68e-bba3683258bc" />
 
+<br></br>
+Now Lets us go through what Yosys is.
+Yosys is an open-source framework for RTL synthesis, widely used in digital design flows. It takes Verilog code as input and translates it into a gate-level netlist, applying 
+optimizations such as constant propagation, dead code elimination, and logic minimization along the way. Unlike proprietary tools, Yosys is modular and script-driven, making it highly 
+flexible for academic research, FPGA prototyping, and even ASIC design exploration. It also integrates with tools like Icarus Verilog for simulation and nextpnr for FPGA place-and-
+route, making it a cornerstone of the open-source hardware ecosystem.
+
+The bare minimum step in Synthesis are as follows:
+
+```
+read_liberty -lib my_cells.lib; \
+read_verilog design.v; \
+synth -top top_module; \
+dfflibmap -liberty my_cells.lib; \
+abc -liberty my_cells.lib; \
+write_verilog netlist.v; \
+show
+```
+<br></br>
+
+read_liberty -lib my_cells.lib
+
+This step loads the standard cell library (.lib file), which contains timing, area, and logical definitions of the available gates, flip-flops, and latches in the target technology. By reading the Liberty file, Yosys understands what cells it can use during mapping. Without this step, Yosys would only perform generic synthesis, not technology-specific optimization.
+
+read_verilog design.v
+
+Here, Yosys parses and loads your RTL design (written in Verilog). This is the starting point of synthesis, where the behavioral or RTL-level code is brought into the tool’s internal representation. Yosys then prepares this RTL to be transformed into structural logic.
+
+synth -top top_module
+
+This command performs the core synthesis: it transforms high-level RTL constructs (like always blocks, if-else, case, loops, etc.) into a network of basic logic elements. The -top flag specifies which module in the design hierarchy is the root. After this step, you essentially get a technology-independent netlist consisting of generic logic primitives.
+
+dfflibmap -liberty my_cells.lib
+
+This pass maps generic flip-flops in the synthesized design to specific flip-flop cells available in the Liberty library. Different technologies may have multiple flavors of DFFs (with/without reset, enable, async clear, etc.), so this ensures your RTL’s sequential elements are matched to real silicon cells.
+
+abc -liberty my_cells.lib
+
+The ABC tool (integrated inside Yosys) performs logic optimization and technology mapping. It takes the generic logic (AND/OR/NOT, etc.) from synthesis and maps it into specific standard cells from the Liberty library. At the same time, it applies Boolean optimizations to reduce area, delay, and power, depending on the constraints. This step converts your design from abstract logic into an actual gate-level netlist implementable on the chosen technology.
+
+write_verilog netlist.v
+
+After mapping, the design is written out as a Verilog gate-level netlist. This file instantiates only standard cells from your Liberty library and can be used for static timing analysis (STA), simulation, or backend flows (place-and-route). It is the final output of the synthesis process.
+
+show
+
+This command launches Yosys’s built-in schematic viewer, allowing you to visually inspect the synthesized design. You can see the logic gates, flip-flops, and interconnections graphically, which helps debug structural issues and validate that synthesis matches your intent.
+
+<br></br>
 
 <img width="960" height="540" alt="Week1day1pic8" src="https://github.com/user-attachments/assets/b755103e-54e0-4099-ab05-7a5cb4ea7fba" />
 
