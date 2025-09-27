@@ -460,9 +460,24 @@ Gate-Level Simulation (GLS) is performed after synthesis to verify that the gate
 
 #### synthesis–simulation mismatch ####
 
-A common issue in digital flows is synthesis–simulation mismatch, where behavior observed in RTL simulation differs from the gate-level netlist. Causes include poor coding styles (e.g., using blocking assignments in sequential logic), unintended latch inference, incorrect sensitivity lists, uninitialized registers, or reliance on constructs not synthesizable. While RTL may appear correct in simulation, synthesis tools may optimize or restructure the logic in ways that expose these issues, leading to functional differences at the gate level.
+A common issue in digital flows is synthesis–simulation mismatch, where behavior observed in RTL simulation differs from the gate-level netlist. Causes include poor coding styles 
+(e.g., using blocking assignments in sequential logic), unintended latch inference, incorrect sensitivity lists, uninitialized registers, or reliance on constructs not synthesizable. 
+While RTL may appear correct in simulation, synthesis tools may optimize or restructure the logic in ways that expose these issues, leading to functional differences at the gate level.
 <br></br>
 GLS is run at the end of the design cycle to catch these mismatches before Place and Route is performed.
+<br></br>
+
+One common cause of synthesis–simulation mismatch is a missing sensitivity list in combinational always blocks. In RTL simulation, the sensitivity list dictates when the always block 
+gets triggered and re-evaluated. If the list is incomplete and misses some input signals, changes in those inputs will not cause the block to execute, leading to stale or incorrect 
+output values during simulation.
+On the other hand, synthesis tools do not depend on the sensitivity list. They analyze the actual logic described inside the block (for example, an if-else chain implementing a 
+multiplexer) and generate the corresponding hardware. The synthesized hardware will naturally respond to all its inputs, regardless of whether they were explicitly mentioned in the 
+sensitivity list.
+<br></br>
+This discrepancy results in a mismatch: simulation may show wrong or outdated outputs, while the synthesized circuit behaves correctly in silicon. To avoid such issues, designers use 
+the always @(*) or always @* construct, which automatically includes all signals used within the block, ensuring simulation and synthesis remain aligned.
+In essence, a complete and accurate sensitivity list is crucial to prevent mismatches. While synthesis will usually “do the right thing,” simulation correctness depends on precise 
+coding, and failure here can mask or create bugs that only surface later in gate-level simulations or hardware testing.
 <br></br>
 
 <img width="960" height="540" alt="Week1day4pic1" src="https://github.com/user-attachments/assets/4ed75d0c-af13-4d45-ac23-71e37776ee11" />
