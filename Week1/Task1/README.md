@@ -438,6 +438,8 @@ For very wide multiplexers/demultiplexers (like 32:1 or 256:1), for loops become
 
 With generate-for, tools replicate modules automatically, producing compact and scalable RTL for large designs like N-bit adders or wide multiplexers. With procedural for loops inside always, designers can optimize assignments to large buses (e.g., clearing or updating 256-bit signals) without coding each bit explicitly. These optimizations don’t reduce actual synthesized hardware, but they improve code readability, maintainability, and scalability.
 
+<br></br>
+<img width="1536" height="1024" alt="ChatGPT Image Sep 27, 2025, 09_45_43 PM" src="https://github.com/user-attachments/assets/0af0519c-d86f-4262-81eb-ffa607ac5a24" />
 
 <br></br>
 One key point to note is that For constructs are used inside the always block while Generate For constructs are used outside the always block.
