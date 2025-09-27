@@ -113,33 +113,33 @@ This command launches Yosys’s built-in schematic viewer, allowing you to visua
 
 
 <img width="960" height="540" alt="Week1day1pic9" src="https://github.com/user-attachments/assets/adf8243b-dd61-43f7-8177-9d46d0f6c45e" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day1pic10" src="https://github.com/user-attachments/assets/007af858-af9e-43f5-9bab-a74b3aa56d60" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day1pic11" src="https://github.com/user-attachments/assets/74843f83-8d4c-4e23-9327-cf74446d056d" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1day1pic12" src="https://github.com/user-attachments/assets/fb419d72-e41a-439e-9a88-a0bbc8f6591a" />
 
 <img width="960" height="540" alt="Week1day1pic13" src="https://github.com/user-attachments/assets/c97eb96e-3a70-4465-bb68-87e76aba04a2" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day1pic14" src="https://github.com/user-attachments/assets/34235199-08da-4c28-a09b-d25e40e60f32" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1day1pic15" src="https://github.com/user-attachments/assets/ee050bf0-f1fa-42c4-9ad5-82ede121eeac" />
 
 <img width="960" height="540" alt="Week1day1pic16" src="https://github.com/user-attachments/assets/99381633-cd5d-4498-bdac-d6236ca12c3b" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1day1pic17" src="https://github.com/user-attachments/assets/484019a6-c0be-4baf-80b0-4b4a897172b3" />
 
 
 <img width="960" height="540" alt="Week1day1pic18" src="https://github.com/user-attachments/assets/6449bada-986c-44d3-abe6-986ae0f23eb4" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1day1pic19" src="https://github.com/user-attachments/assets/b6c44ccd-b18d-43ee-b23a-c0cb44abe1e0" />
 
 
@@ -205,19 +205,19 @@ Designers often use a hybrid strategy—synthesizing critical blocks flat while 
 
 
 <img width="960" height="540" alt="Week1day2pic11" src="https://github.com/user-attachments/assets/d3ad9965-ecb6-42ff-9ca9-07b6da8eb700" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day2pic12" src="https://github.com/user-attachments/assets/ea0833c1-e7df-4575-a896-9c1858562000" />
 
 
 <img width="960" height="540" alt="Week1day2pic13" src="https://github.com/user-attachments/assets/1b9b4aa6-3d92-4748-a778-cad28cf72368" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day2pic14" src="https://github.com/user-attachments/assets/829ef432-64f4-4971-9b5f-1d29fd966cc8" />
 
 
 <img width="960" height="540" alt="Week1day2pic15" src="https://github.com/user-attachments/assets/4d9676f0-7439-431d-bf25-58309d339e67" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day2pic16" src="https://github.com/user-attachments/assets/4db6015b-ae7b-4160-b57b-edf6b4756c2e" />
 
@@ -238,20 +238,20 @@ maximum optimization.
 
 
 <img width="960" height="540" alt="Week1day2pic18" src="https://github.com/user-attachments/assets/f3b10e7e-ea83-4024-9aba-b76750f9eadf" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day2pic19" src="https://github.com/user-attachments/assets/3b248325-a1cb-4c0a-b97d-8e6219225e8d" />
 
 
 <img width="960" height="540" alt="Week1day2pic20" src="https://github.com/user-attachments/assets/1bbda9b4-a8a0-473c-9696-e84bc5042118" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1day2pic21" src="https://github.com/user-attachments/assets/87ed3fdb-389c-4b70-92d8-95d5789339df" />
 
 
 <img width="960" height="540" alt="Week1day2pic22" src="https://github.com/user-attachments/assets/a30fe96d-2713-455e-8d88-6511e86ad12b" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1day2pic23" src="https://github.com/user-attachments/assets/40dad5d1-ff0a-426c-8d42-c963ddcfc064" />
 
 
@@ -289,54 +289,54 @@ transformations, which allow the use of simpler or faster gates. Together, these
 
 <img width="960" height="540" alt="Week1day3pic2" src="https://github.com/user-attachments/assets/67d4f28c-d749-4093-857d-80f2dee4e2ac" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1day3pic3" src="https://github.com/user-attachments/assets/53351f83-d73c-4c81-9db4-171b4b1c1f18" />
 
 
 <img width="960" height="540" alt="Week1day3pic4" src="https://github.com/user-attachments/assets/4e6715bb-1cad-4366-9ebf-155543b99659" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic5" src="https://github.com/user-attachments/assets/c466a248-66f6-452e-b7a3-5607dbfaab79" />
 
 
 <img width="960" height="540" alt="Week1day3pic6" src="https://github.com/user-attachments/assets/3e3c4e97-f389-421c-9ca7-6ec4baaae5d7" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1day3pic7" src="https://github.com/user-attachments/assets/e1ae0b8a-6340-4455-bcbb-febc270b2db0" />
 
 
 <img width="960" height="540" alt="Week1day3pic8" src="https://github.com/user-attachments/assets/c2681787-5ab0-437d-9303-1222f5f8b2ab" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic9" src="https://github.com/user-attachments/assets/528aa94e-4fb9-4a03-8802-4471a8bfdbd4" />
 
 
 <img width="960" height="540" alt="Week1day3pic10" src="https://github.com/user-attachments/assets/7c3f503f-479b-45a8-bfcf-3fef0c4c9be3" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic11" src="https://github.com/user-attachments/assets/fc015c55-8214-4c43-8c2f-405daabc825f" />
 
 
 <img width="960" height="540" alt="Week1day3pic12" src="https://github.com/user-attachments/assets/f2e6c971-bb0c-45ec-bdbd-f2009499ed5b" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1day3pic13" src="https://github.com/user-attachments/assets/42f9216c-55b1-453f-9905-c10c26091891" />
 
 
 <img width="960" height="540" alt="Week1day3pic14" src="https://github.com/user-attachments/assets/87f09fad-d4b9-4e3d-852a-43a30ffc3e56" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic15" src="https://github.com/user-attachments/assets/e0367486-327b-4609-b1be-46ccb2bbfa1e" />
 
 
 <img width="960" height="540" alt="Week1day3pic16" src="https://github.com/user-attachments/assets/a0d07136-e228-4917-bd53-209934f09b10" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic17" src="https://github.com/user-attachments/assets/11f4b09a-f62e-49cb-9bdb-91a5ad81c1c8" />
 
 
 <img width="960" height="540" alt="Week1day3pic18" src="https://github.com/user-attachments/assets/14b42b2d-dff4-4bb2-b724-71cf9b0cc022" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic19" src="https://github.com/user-attachments/assets/40c6a497-4a43-4c3f-89b9-0a045d847901" />
 
@@ -363,67 +363,67 @@ While binary encoding saves area, it increases the complexity of the combination
 
 
 <img width="960" height="540" alt="Week1day3pic22" src="https://github.com/user-attachments/assets/85e0ac06-8c6e-4b04-a22d-241e873f8b62" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic23" src="https://github.com/user-attachments/assets/c885e19c-c337-4157-b919-c3c60a93c72e" />
 
 
 <img width="960" height="540" alt="Week1day3pic24" src="https://github.com/user-attachments/assets/460f557a-1ccc-433c-9fb3-3c73ca032d10" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic25" src="https://github.com/user-attachments/assets/293ff370-b3d8-45a8-a6e4-6a6c7ce20c7e" />
 
 
 <img width="960" height="540" alt="Week1day3pic26" src="https://github.com/user-attachments/assets/d1ae4cc5-2454-4347-9871-66dd27dbc051" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic27" src="https://github.com/user-attachments/assets/0e6d9770-a4d4-4670-ba05-7359d76f38ff" />
 
 
 <img width="960" height="540" alt="Week1day3pic28" src="https://github.com/user-attachments/assets/0444812f-6c26-4e58-a30a-4527e8035c90" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic29" src="https://github.com/user-attachments/assets/30c1606a-bde1-44e0-bebe-3b5d3b60572d" />
 
 
 <img width="960" height="540" alt="Week1day3pic30" src="https://github.com/user-attachments/assets/6762bf1e-4133-453c-bdfc-02f713c6e98c" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic31" src="https://github.com/user-attachments/assets/35de1789-fb1d-425a-b37b-4cecdf2a50b2" />
 
 
 <img width="960" height="540" alt="Week1day3pic32" src="https://github.com/user-attachments/assets/df1b30fd-b586-4270-8d33-0ef0293b23da" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic33" src="https://github.com/user-attachments/assets/b519ce32-5e0d-4f16-9b50-375fc6785015" />
 
 
 <img width="960" height="540" alt="Week1day3pic34" src="https://github.com/user-attachments/assets/889f9030-9a20-48c2-9e4e-dd5094509b0f" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic35" src="https://github.com/user-attachments/assets/55b1d9a7-02c1-4383-93dd-47e9d55d4c56" />
 
 
 <img width="960" height="540" alt="Week1day3pic36" src="https://github.com/user-attachments/assets/77812bff-11be-451a-bf99-03d7dc9a6957" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic37" src="https://github.com/user-attachments/assets/4de8c2e3-118b-4823-8116-2cd1c6d729d2" />
 
 
 <img width="960" height="540" alt="Week1day3pic38" src="https://github.com/user-attachments/assets/5113bcae-b2c2-44ba-8e39-3fb10b451dc0" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic39" src="https://github.com/user-attachments/assets/48393e84-a8ed-45b2-8ece-6cda8561f781" />
 
 
 <img width="960" height="540" alt="Week1day3pic40" src="https://github.com/user-attachments/assets/999e2de0-f848-4af7-a6aa-339ca5127573" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic41" src="https://github.com/user-attachments/assets/ff2b5038-cb00-4464-90cb-8794a1af0183" />
 
 
 <img width="960" height="540" alt="Week1day3pic42" src="https://github.com/user-attachments/assets/abdd2fd7-7284-4ead-83f8-5e34c590a8aa" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic43" src="https://github.com/user-attachments/assets/681baa69-3a5d-4bb1-beff-ffedf7cc5e21" />
 
@@ -485,24 +485,24 @@ coding, and failure here can mask or create bugs that only surface later in gate
 
 <img width="960" height="540" alt="Week1day4pic2" src="https://github.com/user-attachments/assets/75451064-3265-4900-bc6d-f715bec76d13" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1day4pic3" src="https://github.com/user-attachments/assets/b4c5bc9b-901a-44d9-a07b-3e9ddbbc9d62" />
 
 
 <img width="960" height="540" alt="Week1day4pic5" src="https://github.com/user-attachments/assets/912f6439-4d1d-4277-be18-93b3b9a35cdd" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day4pic6" src="https://github.com/user-attachments/assets/4630e72e-cfac-4cc4-9d73-de7aa3d81060" />
 
 
 <img width="960" height="540" alt="Week1day4pic7" src="https://github.com/user-attachments/assets/d2debbc7-fb77-418b-a8eb-7ef0ec8be260" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day4pic8" src="https://github.com/user-attachments/assets/9859f95d-558e-49b8-ae90-eb45f04c5aa3" />
 
 
 <img width="960" height="540" alt="Week1day4pic9" src="https://github.com/user-attachments/assets/e2e1cd23-7fd3-4fe2-bed3-16b3f651211d" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1day4pic10" src="https://github.com/user-attachments/assets/508685e6-2a70-4bee-a95a-051f7a6a4d70" />
 
@@ -587,61 +587,61 @@ Results) by reducing unnecessary logic.
 
 
 <img width="960" height="540" alt="Week1Day5pic3" src="https://github.com/user-attachments/assets/69bebec7-4518-4f33-b80f-c421ca6b1c9a" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1Day5pic4" src="https://github.com/user-attachments/assets/a8c8ceab-bb62-420f-b9f8-45520fb8b85c" />
 
 
 <img width="960" height="540" alt="Week1Day5pic5" src="https://github.com/user-attachments/assets/6852a25c-91c7-4dac-a3ac-3b0485cce008" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1Day5pic6" src="https://github.com/user-attachments/assets/17d82e56-1b5f-4d66-97aa-98b66717b17f" />
 
 
 <img width="960" height="540" alt="Week1Day5pic7" src="https://github.com/user-attachments/assets/a550f4d9-9c64-4047-b009-b6893df61805" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1Day5pic8" src="https://github.com/user-attachments/assets/bf30ea49-b202-4c37-a491-9977d4cd499d" />
 
 
 <img width="960" height="540" alt="Week1Day5pic9" src="https://github.com/user-attachments/assets/f289e39b-a683-4203-b4b8-2d042cc5a8fd" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1Day5pic10" src="https://github.com/user-attachments/assets/4520e47f-0a92-43be-bf2f-5fb1f7eb086c" />
 
 
 <img width="960" height="540" alt="Week1Day5pic11" src="https://github.com/user-attachments/assets/362cb16f-f609-41b1-9255-b08834dd294c" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1Day5pic12" src="https://github.com/user-attachments/assets/20c51c18-9a37-402f-bb92-c30669f8e610" />
 
 
 <img width="960" height="540" alt="Week1Day5pic13" src="https://github.com/user-attachments/assets/a9607efd-9d40-454e-be4b-8fec33e5eb3c" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1Day5pic14" src="https://github.com/user-attachments/assets/b9093909-2807-457e-8575-52f50e5d1ff0" />
 
 
 <img width="960" height="540" alt="Week1Day5pic15" src="https://github.com/user-attachments/assets/ced5ad52-f8a7-4f5f-80b6-aa908ebc7462" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1Day5pic16" src="https://github.com/user-attachments/assets/da561d06-2245-4c39-aa2b-d82a5346dab3" />
 
 
 <img width="960" height="540" alt="Week1Day5pic17" src="https://github.com/user-attachments/assets/af2111d6-3b9c-41b2-bd37-dcdd6316145e" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1Day5pic18" src="https://github.com/user-attachments/assets/1c3e53dc-dd23-4411-8b64-1b11eaf974db" />
 
 
 <img width="960" height="540" alt="Week1Day5pic19" src="https://github.com/user-attachments/assets/bbb8b6e2-af8e-43c1-9c54-1dd2be5a84dc" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1Day5pic20" src="https://github.com/user-attachments/assets/d09901c0-6104-4691-8c5d-ac9c8076ce80" />
 
 
 <img width="960" height="540" alt="Week1Day5pic21" src="https://github.com/user-attachments/assets/ef49de21-2f24-4b0b-8aed-61c949e5d811" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1Day5pic22" src="https://github.com/user-attachments/assets/7cd11933-8da1-45c1-a5a2-fc2be463c549" />
 
@@ -680,30 +680,30 @@ One key point to note is that For constructs are used inside the always block wh
 
 <img width="960" height="540" alt="Week1Day5pic26" src="https://github.com/user-attachments/assets/bda62d9f-68bd-49a6-b120-166050e2a863" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1Day5pic27" src="https://github.com/user-attachments/assets/0527250d-7150-4374-91e2-2f93d58c166b" />
 
 
 <img width="960" height="540" alt="Week1Day5pic28" src="https://github.com/user-attachments/assets/5d97885d-db6e-4222-a480-31a8511e84f5" />
 
-
+<br></br>
 <img width="960" height="540" alt="Week1Day5pic29" src="https://github.com/user-attachments/assets/1f3e6de5-75ab-49ce-90f4-06296fd83e39" />
 
 
 <img width="960" height="540" alt="Week1Day5pic30" src="https://github.com/user-attachments/assets/370d1728-54c4-4860-b241-24c00e479776" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1Day5pic31" src="https://github.com/user-attachments/assets/2bd5261b-e981-49dd-be6d-6f54d100a590" />
 
 
 <img width="960" height="540" alt="Week1Day5pic32" src="https://github.com/user-attachments/assets/50f06e28-28a8-4721-b5aa-0ad9a4f69b64" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1Day5pic33" src="https://github.com/user-attachments/assets/88311551-a72b-4e16-8c0f-7cdf045abe25" />
 
 
 <img width="960" height="540" alt="Week1Day5pic34" src="https://github.com/user-attachments/assets/21289bfc-0fed-4863-877c-45e58d510e39" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1Day5pic35" src="https://github.com/user-attachments/assets/17236fa9-a5bf-41a2-9258-7866e38e13f0" />
 
@@ -725,13 +725,13 @@ full adder needs to be replicated several times.The generate-for construct, allo
 
 
 <img width="960" height="540" alt="Week1Day5pic40" src="https://github.com/user-attachments/assets/c14b3a04-5490-4ea5-b221-870f0c71595d" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1Day5pic41" src="https://github.com/user-attachments/assets/bab18447-f9de-42e5-b405-ba1e6d4dd076" />
 
 
 <img width="960" height="540" alt="Week1Day5pic42" src="https://github.com/user-attachments/assets/5d7533f4-174f-47ea-8613-d713225525a8" />
-
+<br></br>
 
 <img width="960" height="540" alt="Week1Day5pic43" src="https://github.com/user-attachments/assets/44859efb-914a-41b5-99de-d032f50c4a5c" />
 
