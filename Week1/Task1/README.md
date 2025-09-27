@@ -1,5 +1,4 @@
 ## Week 1 : RTL Design Simulation and Synthesis Labs using iVerilog, GTKWave and Yosys ##
-
 <br> </br>
 In a typical RTL design lab, Icarus Verilog (iverilog) is used to compile both the Verilog design file and its testbench into a simulation model. This model is executed with the vvp 
 runtime, which drives the event-driven simulation and produces outputs. If the testbench includes $dumpfile and $dumpvars, the simulator generates a .vcd (Value Change Dump) file that 
@@ -14,11 +13,8 @@ Verification is performed at two critical points in this flow. First, simulation
 synthesis. Then, once Yosys produces the synthesized gate-level netlist, a second round of simulation is performed on this netlist. The purpose is to confirm that the synthesized 
 circuit exhibits the same functional behavior as the original RTL, ensuring there is no mismatch introduced during synthesis
 <br> </br>
-
-### Day 1 Labs ###
-
+### Day 1 Labs: Introduction to Verilog RTL design and Synthesis ###
 <br></br>
-
 Icarus Verilog (iverilog) is an open-source compiler used for simulating Verilog designs. It takes both the design file, which describes the logic of the hardware, and the testbench 
 file, which applies stimulus and observes the responses. When these files are compiled together using the iverilog command, the output is a simulation image (by default named a.out if 
 no custom name is provided). This file is not a standalone program but an intermediate format specifically created for the Icarus simulation engine.
@@ -36,6 +32,7 @@ glitches, race conditions, or logical errors that might be missed in console-bas
 and timing behavior at the RTL level.
 <br></br>
 
+So we Will First Download the Github Repo which has all the nescessary files. We will then have a Quick walk through along the verilog files.
 
 <img width="960" height="540" alt="Week1day1pic1" src="https://github.com/user-attachments/assets/a942c54d-fb7b-440c-95dc-679ff89a6068" />
 
@@ -89,8 +86,8 @@ and timing behavior at the RTL level.
 <img width="960" height="540" alt="Week1day1pic20" src="https://github.com/user-attachments/assets/93575f0f-210b-42b0-835a-361a92d272b1" />
 
 
-### Day 2 Labs ### 
-
+### Day 2 Labs: Introduction to Timing libs, hierarchical vs flat synthesis and efficient flop coding styles ### 
+<br></br>
 
 <img width="960" height="540" alt="Week1day2pic10" src="https://github.com/user-attachments/assets/fb6541ea-3405-4e71-91bf-75aeaea174c2" />
 
@@ -137,8 +134,8 @@ and timing behavior at the RTL level.
 <img width="960" height="540" alt="Week1day2pic24" src="https://github.com/user-attachments/assets/5abe8048-92a4-4e50-8ec8-be7c975e47a7" />
 
 
-### Day 3 Labs ###
-
+### Day 3 Labs: Combinational and sequential optmizations ###
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic1" src="https://github.com/user-attachments/assets/7303fac2-7227-4a97-8aba-06722f70486f" />
 
@@ -284,7 +281,8 @@ and timing behavior at the RTL level.
 <img width="960" height="540" alt="Week1day3pic48" src="https://github.com/user-attachments/assets/9b4b795d-3653-4609-9e4c-04a7f3fdbe11" />
 
 
-### Day 4 Labs ###
+### Day 4 Labs: GLS, blocking vs non-blocking and Synthesis-Simulation mismatch ###
+<br></br>
 
 <img width="960" height="540" alt="Week1day4pic1" src="https://github.com/user-attachments/assets/4ed75d0c-af13-4d45-ac23-71e37776ee11" />
 
@@ -331,9 +329,27 @@ and timing behavior at the RTL level.
 <img width="960" height="540" alt="Week1day4pic16" src="https://github.com/user-attachments/assets/c33625f0-7773-40b3-b222-c9041a65cd35" />
 
 
-### Day 5 Labs ###
-
-
+### Day 5 Labs: Optimization in synthesis for If, Case and Generate For Constructs  ###
+<br></br>
+When using Yosys or similar synthesizers such as DC Compiler, it is important to remember that the tool translates RTL constructs literally into gates. Optimizations are only as good 
+as the RTL description. Writing complete, deterministic logic with no ambiguities ensures the synthesizer avoids adding redundant latches or mux levels. In practice, this means 
+treating your RTL as a precise hardware blueprint: use case for multiplexer logic, cover all possibilities, and avoid partial assignments. Following these practices helps synthesis 
+tools produce clean, optimized hardware with minimal resource waste and predictable timing.
+<br></br>
+#### Key Takeaways For If and Case Constructs ####
+In synthesis, if-else constructs are translated into priority logic, where conditions are evaluated in order, and the first one that is true determines the output. This results in a 
+cascade of multiplexers, each corresponding to one condition, with later conditions having lower priority. One of the biggest optimization pitfalls is incomplete coverage of conditions. With if-else, if no final else is included, the synthesis tool assumes the output should “remember” its previous value, leading to an inferred latch.
+<br></br>
+On the other hand, case statements are naturally synthesized into a parallel multiplexer, where the sel signal directly chooses between multiple options. This makes case statements 
+better suited for clean, multi-way data selection without implicit priority. in a case statement, if not all selector values are covered and no default is present, synthesis again infers latches. This is usually undesirable in combinational circuits, as it introduces sequential behavior unintentionally and complicates timing.
+<br></br>
+Another subtle issue arises when only some signals are assigned in certain branches of an if or case. For example, if one branch updates x but not y, the tool again infers storage for y to hold its old value. This not only increases resource usage but also creates unintended state. Good optimization practice dictates assigning all outputs in every branch of an if or case statement, even if it means explicitly driving a default or redundant value.
+<br></br>
+From a synthesis optimization perspective, clarity and predictability are crucial. Use if-else when true priority logic is required for example interrupt handling where higher 
+priority must preempt lower. Use case when selecting between mutually exclusive options, as it maps directly to efficient multiplexers. Always include a final else or a default case 
+to prevent latch inference, and ensure every signal is assigned across all branches. This not only avoids unintended sequential elements but also improves synthesis QoR (Quality of 
+Results) by reducing unnecessary logic.
+<br></br>
 <img width="960" height="540" alt="Week1Day5pic1" src="https://github.com/user-attachments/assets/66e3f71b-66de-41ed-a6a2-c2ffb883ff04" />
 
 
