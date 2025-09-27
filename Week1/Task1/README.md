@@ -1,6 +1,6 @@
 ## Week 1 : RTL Design Simulation and Synthesis Labs using iVerilog, GTKWave and Yosys ##
-<br><br> </br></br>
 
+<br> </br>
 In a typical RTL design lab, Icarus Verilog (iverilog) is used to compile both the Verilog design file and its testbench into a simulation model. This model is executed with the vvp 
 runtime, which drives the event-driven simulation and produces outputs. If the testbench includes $dumpfile and $dumpvars, the simulator generates a .vcd (Value Change Dump) file that 
 records signal transitions over time. The .vcd file can then be loaded into GTKWave, a graphical waveform viewer, which provides a clear visual representation of how the design 
