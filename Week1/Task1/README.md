@@ -512,6 +512,40 @@ coding, and failure here can mask or create bugs that only surface later in gate
 
 <img width="960" height="540" alt="Week1day4pic12" src="https://github.com/user-attachments/assets/017ff17b-6bb5-4aea-ba47-fcea1b8d33af" />
 
+<br></br>
+#### Synthesis Simulation Mismatch due to blocking and nonblocking statements. ####
+
+The mismatch occurs because simulation treats blocking statements literally — one after another — while hardware operates in parallel. When designers accidentally use blocking assignments inside sequential always blocks (always @(posedge clk)), the simulation result may not reflect the true hardware behavior after synthesis. This can lead to debugging nightmares late in the flow.
+
+##### Blocking Assignments (=) #####
+Blocking assignments execute sequentially, in the order written inside an always block. That means the right-hand side (RHS) is computed and immediately assigned to the left-hand side (LHS) before moving on to the next statement. In simulation, this can introduce unintended dependencies.
+```
+q = q0;  
+q0 = d;
+
+```
+In simulation, q will get the old value of q0, because q0 is updated only after q is assigned. However, in synthesis, tools try to infer hardware behavior (flip-flops or combinational 
+logic), so both signals may end up being updated in parallel. This mismatch creates different results between RTL simulation and the synthesized netlist.
+<br></br>
+
+##### Non-Blocking Assignments (<=) #####
+Non-blocking assignments, on the other hand, schedule all updates to occur in parallel at the end of the time step. This models the real hardware behavior more accurately for 
+sequential logic
+```
+q <= q0;  
+q0 <= d;
+
+```
+Here, both q and q0 get updated together — q takes the old value of q0, and q0 takes d. This matches what actual flip-flops would do on the clock edge, avoiding mismatches between 
+simulation and synthesis.
+<br></br>
+#### Important Takeaway ####
+
+Use blocking (=) only in combinational always blocks (e.g., always @(*)) where sequential ordering of assignments is intended.
+<br></br>
+Use non-blocking (<=) in sequential always blocks (clocked processes) to reflect parallel hardware updates.
+
+<br></br>
 
 <img width="960" height="540" alt="Week1day4pic13" src="https://github.com/user-attachments/assets/94099b6a-04b1-4672-868b-f69b017ba7bb" />
 
