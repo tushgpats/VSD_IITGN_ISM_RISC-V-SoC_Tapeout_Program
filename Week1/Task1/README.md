@@ -250,24 +250,36 @@
 <img width="960" height="540" alt="Week1day3pic48" src="https://github.com/user-attachments/assets/9b4b795d-3653-4609-9e4c-04a7f3fdbe11" />
 
 
+### Day 4 Labs ###
+
+<img width="960" height="540" alt="Week1day4pic1" src="https://github.com/user-attachments/assets/4ed75d0c-af13-4d45-ac23-71e37776ee11" />
 
 
+<img width="960" height="540" alt="Week1day4pic2" src="https://github.com/user-attachments/assets/75451064-3265-4900-bc6d-f715bec76d13" />
 
 
+<img width="960" height="540" alt="Week1day4pic3" src="https://github.com/user-attachments/assets/b4c5bc9b-901a-44d9-a07b-3e9ddbbc9d62" />
 
 
+<img width="960" height="540" alt="Week1day4pic5" src="https://github.com/user-attachments/assets/912f6439-4d1d-4277-be18-93b3b9a35cdd" />
 
 
+<img width="960" height="540" alt="Week1day4pic6" src="https://github.com/user-attachments/assets/4630e72e-cfac-4cc4-9d73-de7aa3d81060" />
 
 
+<img width="960" height="540" alt="Week1day4pic7" src="https://github.com/user-attachments/assets/d2debbc7-fb77-418b-a8eb-7ef0ec8be260" />
 
 
+<img width="960" height="540" alt="Week1day4pic8" src="https://github.com/user-attachments/assets/9859f95d-558e-49b8-ae90-eb45f04c5aa3" />
 
 
+<img width="960" height="540" alt="Week1day4pic9" src="https://github.com/user-attachments/assets/e2e1cd23-7fd3-4fe2-bed3-16b3f651211d" />
 
 
+<img width="960" height="540" alt="Week1day4pic10" src="https://github.com/user-attachments/assets/508685e6-2a70-4bee-a95a-051f7a6a4d70" />
 
 
+<img width="960" height="540" alt="Week1day4pic11" src="https://github.com/user-attachments/assets/1b98af58-4b65-460a-9c45-6f66aad56499" />
 
 
 
