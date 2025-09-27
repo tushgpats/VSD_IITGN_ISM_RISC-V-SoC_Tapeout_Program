@@ -455,6 +455,15 @@ This optimization improves area, power, and timing by reducing unnecessary seque
 
 ### Day 4 Labs: GLS, blocking vs non-blocking and Synthesis-Simulation mismatch ###
 <br></br>
+#### Gate-Level Simulation (GLS) ####
+Gate-Level Simulation (GLS) is performed after synthesis to verify that the gate-level netlist generated from RTL still functions correctly and meets timing expectations. Unlike RTL simulation, GLS uses the synthesized netlist mapped to standard cells, often with back-annotated delays from the .sdf (Standard Delay Format) file. This makes GLS slower than RTL simulation but far more accurate, since it captures real-world effects such as propagation delays, glitches, and optimizations done during synthesis.
+
+#### synthesis–simulation mismatch ####
+
+A common issue in digital flows is synthesis–simulation mismatch, where behavior observed in RTL simulation differs from the gate-level netlist. Causes include poor coding styles (e.g., using blocking assignments in sequential logic), unintended latch inference, incorrect sensitivity lists, uninitialized registers, or reliance on constructs not synthesizable. While RTL may appear correct in simulation, synthesis tools may optimize or restructure the logic in ways that expose these issues, leading to functional differences at the gate level.
+<br></br>
+GLS is run at the end of the design cycle to catch these mismatches before Place and Route is performed.
+<br></br>
 
 <img width="960" height="540" alt="Week1day4pic1" src="https://github.com/user-attachments/assets/4ed75d0c-af13-4d45-ac23-71e37776ee11" />
 
