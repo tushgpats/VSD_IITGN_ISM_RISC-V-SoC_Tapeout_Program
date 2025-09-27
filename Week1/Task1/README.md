@@ -152,7 +152,7 @@ This command launches Yosys’s built-in schematic viewer, allowing you to visua
 Timing libraries are the foundation of digital synthesis, providing the logical, electrical, and timing characteristics of standard cells that allow tools to map RTL into real hardware while meeting delay and power constraints. When synthesizing, designers can choose between hierarchical synthesis, which preserves module boundaries for easier debug and reuse, or flat synthesis, which collapses everything into one level for more global optimization at the cost of runtime and memory. Alongside this, efficient flop coding styles—such as always using non-blocking assignments (<=) in sequential blocks, coding resets and enables consistently, and avoiding unnecessary latches—help ensure clean mapping to standard cells, predictable timing behavior, and optimal quality of results (QoR) across the design flow.
 <br></br>
 
-#### Key Takeaways on .lib files###
+#### Key Takeaways on .lib files ####
 <br></br>
 The .lib files are used to read to map generic gates into real cells, using area and delay trade-offs. A timing library (commonly a .lib file in Liberty format) describes the characteristics of standard cells in a given semiconductor technology. It is provided by the foundry or PDK vendor and acts as a database that synthesis, simulation, and STA tools use to model real hardware.
 
@@ -189,6 +189,17 @@ while carefully balancing power and area trade-offs.
 -Use narrower (weaker) cells where speed is less critical, saving power and area.
 -Use wider (stronger) cells sparingly on timing-critical paths, where reducing delay is more important than saving power.
 
+<br></br>
+
+#### Hierarchical Synthesis ####
+
+In hierarchical synthesis, each module is synthesized separately, preserving hierarchy. This makes large designs more manageable, supports module reuse, and speeds up incremental changes, but it may leave some global optimizations untapped. 
+
+#### Flat synthesis ####
+
+Flat synthesis, by contrast, collapses the design into a single level before optimization. This enables maximum global optimization and potentially better QoR (timing, area, power), but it comes at the cost of longer runtimes, larger memory usage, and loss of clear module boundaries for debug.
+
+Designers often use a hybrid strategy—synthesizing critical blocks flat while keeping others hierarchical.
 <br></br>
 <img width="960" height="540" alt="Week1day2pic10" src="https://github.com/user-attachments/assets/fb6541ea-3405-4e71-91bf-75aeaea174c2" />
 
