@@ -264,7 +264,24 @@ maximum optimization.
 Combinational optimization focuses on reducing the complexity, delay, and power of logic that does not involve memory elements. Synthesis tools apply techniques such as Boolean simplification, constant propagation, dead code elimination, and common sub-expression sharing to minimize the number of gates. For example, redundant logic like (a & b) | (a & b & c) can be reduced to (a & b). Tools also perform logic restructuring (reordering AND/OR trees), gate sizing, and mux optimizations to reduce critical path delay. The goal is to improve area, timing, and power efficiency while maintaining functional equivalence with the RTL.
 
 #### Sequential Optimizations in Synthesis ####
-Sequential optimization, on the other hand, targets logic involving flip-flops, latches, and state elements. Key techniques include retiming (moving flops across combinational logic to balance path delays), sequential constant propagation (removing registers fed by constants), merging equivalent registers, and removing unused flops. These optimizations help fix timing violations, reduce pipeline depth where possible, and minimize unnecessary switching activity. Sequential optimizations are especially important in high-speed designs, where balancing setup and hold times across critical paths is essential. Together with combinational optimizations, they ensure the design achieves the best possible PPA (Power, Performance, Area) while preserving correctness.
+Sequential optimization, on the other hand, targets logic involving flip-flops, latches, and state elements. Key techniques include retiming (moving flops across combinational logic 
+to balance path delays), sequential constant propagation (removing registers fed by constants), merging equivalent registers, and removing unused flops. These optimizations help fix 
+timing violations, reduce pipeline depth where possible, and minimize unnecessary switching activity. Sequential optimizations are especially important in high-speed designs, where 
+balancing setup and hold times across critical paths is essential. Together with combinational optimizations, they ensure the design achieves the best possible PPA (Power, 
+Performance, Area) while preserving correctness.
+<br></br>
+
+#### Combinational Optimization using Constant Propagation and Boolean Logic Optimizations ####
+
+Constant propagation is a synthesis optimization where signals driven by fixed values (logic 0 or 1) are traced through the circuit, and the resulting logic is simplified. For 
+example, if a gate input is tied to a constant, the output can be resolved without needing the gate itself—A & 1 simplifies to A, B | 0 simplifies to B, and X & 0 simplifies to 0. 
+Similarly, entire sub-circuits that depend only on constant inputs can be eliminated, reducing area and power. This technique is especially useful in parameterized designs, where 
+certain features may be disabled or tied off, allowing the synthesizer to prune unused logic automatically.
+<br></br>
+Boolean logic optimization refers to systematically simplifying combinational expressions to reduce gate count, area, and delay. Synthesis tools apply algebraic rules, Karnaugh map–
+like minimization, and factoring techniques to restructure logic. For instance, (A & B) | (A & C) can be optimized to A & (B | C), requiring fewer gates and potentially lowering 
+critical path delay. More advanced optimizations also involve common sub-expression elimination, where repeated logic is shared rather than duplicated, and De Morgan’s 
+transformations, which allow the use of simpler or faster gates. Together, these optimizations help achieve an efficient gate-level netlist while preserving functional correctness.
 
 <br></br>
 <img width="960" height="540" alt="Week1day3pic1" src="https://github.com/user-attachments/assets/7303fac2-7227-4a97-8aba-06722f70486f" />
@@ -326,6 +343,21 @@ Sequential optimization, on the other hand, targets logic involving flip-flops, 
 
 <img width="960" height="540" alt="Week1day3pic20" src="https://github.com/user-attachments/assets/afce78c0-d90d-4216-9b0c-195c44b810cb" />
 
+
+<br></br>
+#### Sequential optimization ####
+Sequential optimization refers to techniques applied during synthesis that focus on registers, latches, and state elements rather than purely combinational logic. While combinational 
+optimization simplifies Boolean expressions, sequential optimization looks at how data flows across clock cycles and restructures the design to improve timing, area, and power without 
+altering functional behavior.
+
+Common techniques include state optimization, where finite state machines (FSMs) are re-encoded or unreachable states are removed; register retiming, which shifts flip-flops across 
+combinational logic to balance path delays; register cloning, where a heavily loaded flop is duplicated to reduce fanout; and pruning unused outputs or constant-driven registers, 
+which removes redundant sequential logic.
+
+State optimization in flip-flops refers to techniques used during synthesis to minimize or restructure the state elements that represent sequential behavior
+In binary encoding, the number of flip-flops required to represent an FSM is the smallest possible: only ⌈log₂(N)⌉ FFs are needed for N states
+While binary encoding saves area, it increases the complexity of the combinational logic
+<br></br>
 
 <img width="960" height="540" alt="Week1day3pic21" src="https://github.com/user-attachments/assets/db24654f-9591-41a3-8f6a-021331cff159" />
 
