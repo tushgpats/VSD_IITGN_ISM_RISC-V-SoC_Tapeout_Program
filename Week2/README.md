@@ -30,7 +30,7 @@ hardware accelerators.SoCs help chip designers achieve compact, energy-efficient
 <h4> Despite all the good points supporting the design of SoCs, there are a few issues with them such as complex design requirements, potential heat buildup from packing many 
   components into a small area, and reduced flexibility since each SoC is tailored for specific tasks and difficult to modify once fabricated. </h4>
 
-<h5> Components of SoC </h5>
+<h4> Components of SoC </h4>
   <img width="2000" height="1600" alt="SoC_KeyParts_Arrows" src="https://github.com/user-attachments/assets/b18ccb09-d1f2-4fbf-a687-f2ae8e0e8ebe" />
 
 ## SoC Design Flow ##
