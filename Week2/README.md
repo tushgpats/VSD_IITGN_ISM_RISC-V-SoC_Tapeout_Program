@@ -159,6 +159,10 @@ cd output
 
 ```
 
+<img width="800" height="600" alt="Screenshot from 2025-10-04 13-18-36" src="https://github.com/user-attachments/assets/5646f12a-8235-44e3-a36c-2fe9f7268738" />
+
+
+
 #### Simulation Waveforms ####
 
 We now use GTKWave to view the Waveforms.
@@ -168,7 +172,9 @@ gtkwave pre_synth_sim.vcd
 
 ```
 
+<img width="800" height="600" alt="Screenshot from 2025-10-04 13-16-28" src="https://github.com/user-attachments/assets/b255c8d7-79ce-4cd4-9f6f-654b45614fe3" />
 
+<img width="800" height="600" alt="Screenshot from 2025-10-04 13-16-34" src="https://github.com/user-attachments/assets/b84c82be-3c55-4bba-8d9d-e815b102e4f3" />
 
 
 ## Acknowledgements ##
