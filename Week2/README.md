@@ -16,6 +16,8 @@ place most of a system’s functionality on one piece of silicon.
 Today, SoCs power nearly all modern electronic devices, from smartphones and laptops to cars, IoT devices, and networking equipment. High-performance examples such as Apple’s M1 and M2 
 chips or Qualcomm’s Snapdragon processors combine CPUs, GPUs, DSPs, memory controllers, and even AI accelerators within one integrated solution.
 
+<img width="2400" height="800" alt="CPU_to_SoC_Timeline" src="https://github.com/user-attachments/assets/b9074e1c-c51b-416e-998d-deca2ea0a19d" />
+
 ## System-on-Chip (SoC) ##
 
 An SoC is a complete computing system fabricated on a single chip, integrating the CPU or multiple cores along with memory controllers, peripheral interfaces, and often specialized 
