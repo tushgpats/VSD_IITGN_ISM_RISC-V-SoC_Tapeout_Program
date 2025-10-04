@@ -86,6 +86,29 @@ The **R-2R Ladder DAC** solves the precision problem by using only two resistor 
 - Because only two resistor values are required, it is much easier to fabricate and scale to higher resolutions.  
 
 
+### 🎯 Relevance of VSDBabySoC  
+
+The **VSDBabySoC** is more than just a simple teaching design — it is a compact mixed-signal SoC integrating a RISC-V CPU (RVMYTH), a PLL, and a DAC. Its real strength lies in how it connects **education, research, and prototyping** into one open-source framework.  
+
+#### 📚 Education  
+- Acts as a complete educational bridge to learn the **entire SoC design flow** (RTL → synthesis → PnR → signoff → tapeout).  
+- Unlike standalone CPU projects, it includes **analog IP integration** (PLL, DAC), giving students exposure to mixed-signal challenges.  
+
+#### 🔧 Hobby Projects  
+- Lets you practice **running open-source flows** (Sky130 PDK, Yosys, OpenLane) without needing expensive EDA tools.  
+- Serves as a **reference design** to build your own small SoCs for experimentation.  
+
+#### 🔬 Research  
+- Can be extended by replacing RVMYTH with another RISC-V core or swapping the DAC with other analog IPs.  
+- Useful for studying **noise isolation, DRC/STA debugging, and mixed-signal integration** in real chip contexts.  
+- Already validated in actual **VSD tapeouts**, making it a trustworthy starting point for academic research.  
+
+#### 🚀 Prototyping & Sandbox  
+- Provides a sandbox to try **new digital accelerators or blocks** (like a systolic array for ML/Edge AI).  
+- Can be extended with **memory-mapped peripherals** (GPIO, UART, SPI, ADC) for building IoT-class SoCs.  
+- Ideal for **prototyping tiny embedded systems** and testing new IP ideas in a realistic flow.  
+
+✨ **In short:** VSDBabySoC is a ready-made platform that connects *learning, experimenting, and innovating* in SoC design — whether for academics, hobby projects, or research extensions.  
 
 
 
