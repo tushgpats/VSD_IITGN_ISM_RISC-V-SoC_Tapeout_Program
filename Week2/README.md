@@ -95,11 +95,9 @@ The **VSDBabySoC** is more than just a simple teaching design — it is a compac
 - Unlike standalone CPU projects, it includes **analog IP integration** (PLL, DAC), giving students exposure to mixed-signal challenges.  
 
 #### 🔧 Hobby Projects  
-- Lets you practice **running open-source flows** (Sky130 PDK, Yosys, OpenLane) without needing expensive EDA tools.  
 - Serves as a **reference design** to build your own small SoCs for experimentation.  
 
 #### 🔬 Research  
-- Can be extended by replacing RVMYTH with another RISC-V core or swapping the DAC with other analog IPs.  
 - Useful for studying **noise isolation, DRC/STA debugging, and mixed-signal integration** in real chip contexts.  
 - Already validated in actual **VSD tapeouts**, making it a trustworthy starting point for academic research.  
 
@@ -110,8 +108,68 @@ The **VSDBabySoC** is more than just a simple teaching design — it is a compac
 
 ✨ **In short:** VSDBabySoC is a ready-made platform that connects *learning, experimenting, and innovating* in SoC design — whether for academics, hobby projects, or research extensions.  
 
+### Lab Setup ###
+
+We First install Sandpiper. SandPiper converts TL-Verilog to standard Verilog. this is because Iverilog (Icarus Verilog) Doesn't Support TL-Verilog.
+```
+sudo apt install python3-pip
+pip3 install pyyaml click sandpiper-saas
+
+```
+We then Clone the Repository that has all the relevant files.
+
+```
+git clone https://github.com/manili/VSDBabySoC
+
+```
+
+### File Structure ###
+
+```
+VSDBabySoC/
+├── src/
+│   ├── include/              # Header files (*.vh)
+│   ├── module/               # Verilog + TLV modules
+│   │   ├── vsdbabysoc.v      # Top-level SoC module integrating CPU, PLL, and DAC
+│   │   ├── rvmyth.tlv        # TL-Verilog source for RVMYTH CPU
+│   │   ├── avsdpll.v         # Phase-Locked Loop (PLL)
+│   │   ├── avsddac.v         # Digital-to-Analog Converter (DAC)
+│   │   ├── clk_gate.v        # Clock gating logic for power management
+│   │   ├── sandpiper.vh      # TL-Verilog include header (used during TLV-to-Verilog translation)
+│   │   └── testbench.v       # Testbench for simulation and verification
+└── output/                   # Simulation, synthesis, and waveform outputs
+```
+
+### TL-Verilog to Verilog Conversion ###
+This an important step as Iverilog cannot understand TL-Verilog. We accomplish this using sandpiper-saas by RedwoodEDA. Icarus Verilog does have some support for System Verilog but its not complete, therefore it is advisable to stick to converting to Verilog and not trying to allow the sandpiper tool to get away with letting some conversions being in SV. as it can cause unexpected errors when running with Icarus Verilog specifically if you use -g2012 flag with it to force it to allow SV constucts such as "always @(ff)".
+The following command was used to ensure conversion to Verilog was done correctly and no remanant SV code was present in generated file.
+
+```
+sandpiper-saas -i ./src/module/rvmyth.tlv -o rvmyth.v --bestsv --noline -p verilog --outdir ./src/module/
+
+```
+### Presynthesis Simulation ###
+
+We first use Icarus Verilog (iverilog) to compile the testbench and run simulations. The simulation generates a dump file (.vcd), which is later used to visualize signal waveforms in GTKWave.
+
+```
+iverilog -o output/pre_synth_sim.out -DPRE_SYNTH_SIM -I src/module src/module/testbench.v
+cd output
+./pre_synth_sim.out
+
+```
+
+#### Simulation Waveforms ####
+
+We now use GTKWave to view the Waveforms.
+
+```
+gtkwave pre_synth_sim.vcd
+
+```
+
 
 
 
 ## Acknowledgements ##
-www.Tutorialspoint.com https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_phase_locked_loop_ic.htm
+www.Tutorialspoint.com [ https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_phase_locked_loop_ic.htm https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_digital_to_analog_converters.htm ]
