@@ -18,6 +18,8 @@ chips or Qualcomm’s Snapdragon processors combine CPUs, GPUs, DSPs, memory con
 
 <img width="2400" height="800" alt="CPU_to_SoC_Timeline" src="https://github.com/user-attachments/assets/b9074e1c-c51b-416e-998d-deca2ea0a19d" />
 
+<h4> SoCs helped overcome the drawbacks of standalone CPUs by reducing board area, lowering power consumption, minimizing interconnect delays, and cutting costs through the integration of multiple components into a single chip.</h4>
+
 ## System-on-Chip (SoC) ##
 
 An SoC is a complete computing system fabricated on a single chip, integrating the CPU or multiple cores along with memory controllers, peripheral interfaces, and often specialized 
