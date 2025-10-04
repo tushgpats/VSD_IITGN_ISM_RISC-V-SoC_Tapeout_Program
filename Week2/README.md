@@ -22,3 +22,6 @@ chips or Qualcomm’s Snapdragon processors combine CPUs, GPUs, DSPs, memory con
 
 An SoC is a complete computing system fabricated on a single chip, integrating the CPU or multiple cores along with memory controllers, peripheral interfaces, and often specialized 
 hardware accelerators.SoCs help chip designers achieve compact, energy-efficient, and cost-effective systems using a single piece of silicon.
+
+![Apple-M4-Max-chip-CPU-performance_big jpg large_2x](https://github.com/user-attachments/assets/5982bc11-6e0b-4c31-b4f2-9691c7a2ab77)
+
