@@ -177,6 +177,14 @@ gtkwave pre_synth_sim.vcd
 <img width="800" height="600" alt="Screenshot from 2025-10-04 13-16-34" src="https://github.com/user-attachments/assets/b84c82be-3c55-4bba-8d9d-e815b102e4f3" />
 
 
+
+#### Troubleshooting ####
+
+- Ensure that the files are included only once as it may give rise to redefinition errors. the files can be included in the testbench or in the CLI.
+- Ensure that TL-Verilog to Verilog conversion is done correctly. use flags such as "" "" to ensure it. I-Verilog has very limited Support for System Verilog and very frequently Sandpiper puts SV constructs in the generated Files.
+
+
+
 ## Acknowledgements ##
 **www.Tutorialspoint.com** [ https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_phase_locked_loop_ic.htm https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_digital_to_analog_converters.htm ]
 
