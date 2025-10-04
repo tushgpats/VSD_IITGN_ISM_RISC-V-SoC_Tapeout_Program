@@ -32,3 +32,63 @@ hardware accelerators.SoCs help chip designers achieve compact, energy-efficient
 
 <h5> Components of SoC </h5>
   <img width="2000" height="1600" alt="SoC_KeyParts_Arrows" src="https://github.com/user-attachments/assets/b18ccb09-d1f2-4fbf-a687-f2ae8e0e8ebe" />
+
+## SoC Design Flow ##
+
+<img width="2777" height="59" alt="SoC_Infographic" src="https://github.com/user-attachments/assets/58985843-4b74-4ae3-93cf-adff53e1e452" />
+
+## VSDBabySoC ##
+
+<img width="2270" height="1260" alt="image" src="https://github.com/user-attachments/assets/8bc66fa7-28a2-4e71-81e4-e20974b83ec8" />
+
+The **VSDBabySoC** integrates three main components,RVMYTH (RISC-V CPU),Phase-Locked Loop (PLL) and Digital-to-Analog Converter (DAC).
+
+- **RVMYTH (RISC-V CPU core)** : A simple, RISC-V processor that executes instructions and serves as the computing engine of the SoC.  
+
+- **Phase-Locked Loop (PLL) 8xPLL** : Provides a stable, high-frequency system clock by multiplying and conditioning the input clock, ensuring reliable CPU and peripheral operation.  
+
+- **10-bit DAC (Digital-to-Analog Converter)** : Converts digital outputs from the CPU into analog signals, enabling mixed-signal interfacing (useful for testing and demonstration).  
+
+### Phase-Locked Loop (PLL) ###
+
+<img width="600" height="178" alt="image" src="https://github.com/user-attachments/assets/40f25f41-d50f-4e7b-a18b-67a3188ea369" />
+
+
+A **Phase-Locked Loop (PLL)** is a feedback control system that generates a stable output signal locked to a given reference input frequency. It is widely used in clock generation, communication systems, and frequency synthesis because of its ability to maintain synchronization. It mainly consists of three components
+
+- **Phase Detector (PD):** Compares the phase of the input frequency (*f_in*) with the feedback/output frequency (*f_out*) and produces a voltage proportional to their phase difference.  
+- **Active Low-Pass Filter (LPF):** Eliminates high-frequency components from the PD output, leaving a clean DC voltage that represents phase error while also amplifying the signal.  
+- **Voltage-Controlled Oscillator (VCO):** Produces an output signal whose frequency varies according to the DC voltage received from the LPF.  
+
+Through the combined action of these three components, the PLL adjusts the VCO until its output frequency matches the input frequency, achieving stable and synchronized operation.
+
+## 🖥️ Digital-to-Analog Converter (DAC)
+
+A **Digital-to-Analog Converter (DAC)** converts digital (binary) signals into continuous analog signals. DACs are widely used in systems where digital processors or controllers must interact with the analog world — such as audio systems, communication devices, and mixed-signal SoCs.  
+There are two common types of DACs:  
+
+---
+![binary_weighted_resistors](https://github.com/user-attachments/assets/0e1ce4c8-5ad4-4fe1-997c-ae717070d5d8)
+
+### 1️⃣ Weighted Resistor DAC  
+A **Weighted Resistor DAC** uses resistors of different values, each weighted according to the binary significance of the input bits.  
+- Each bit of the digital input controls a switch that either connects the resistor to a reference voltage or to ground.  
+- Higher-order bits control resistors with lower resistance values, meaning they contribute more to the output voltage.  
+- The resistors are connected into an op-amp inverting adder circuit, producing an analog output proportional to the binary input.  
+
+---
+![ladder_dac](https://github.com/user-attachments/assets/49ef0d9d-2d11-4159-9b47-26a67d56700b)
+
+### 2️⃣ R-2R Ladder DAC  
+The **R-2R Ladder DAC** solves the precision problem by using only two resistor values: `R` and `2R`.  
+- This ladder-like resistor network distributes the binary input weights naturally.  
+- Each digital bit controls a switch connecting the ladder to reference voltage or ground.  
+- Because only two resistor values are required, it is much easier to fabricate and scale to higher resolutions.  
+
+
+
+
+
+
+## Acknowledgements ##
+www.Tutorialspoint.com https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_phase_locked_loop_ic.htm
