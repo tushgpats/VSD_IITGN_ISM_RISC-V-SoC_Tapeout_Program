@@ -1,7 +1,6 @@
 # Fundamentals of SoC Design and Presynthesis Simulation of VSDBabySoC. #
 <br></br>
 ## Background behind emergence of SoCs ##
-<br></br>
 
 For much of the Second half of the century, the Central Processing Unit (CPU) was designed as a standalone chip responsible only for executing instructions. In order to build a 
 complete system, this CPU had to be connected to several external peripherals such as memory chips (RAM and ROM), timers, counters, and I/O controllers. All of these components were 
