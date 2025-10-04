@@ -247,12 +247,43 @@ The **DAC** converts 10-bit digital data from the CPU into analog voltages, enab
 The DAC continuously converts digital CPU outputs into analog voltages.  
 When `OUT[9:0] = 2E5`, the analog output reaches ~0.724 V — confirming correct D/A conversion.
 
+#### 🔢 DAC Output Calculation
+
+For a 10-bit DAC, the analog output voltage \( V_{OUT} \) is given by:
+
+\[
+V_{OUT} = \frac{D}{2^{10} - 1} \times (V_{REFH} - V_{REFL}) + V_{REFL}
+\]
+
+Where:  
+- \( D \) = Digital input (in decimal)  
+- \( 2^{10} - 1 = 1023 \)  
+- \( V_{REFH} = 1\,V \)  
+- \( V_{REFL} = 0\,V \)
+
+---
+
+\[
+2E5_{(hex)} = 2 \times 16^2 + 14 \times 16 + 5 = 741_{(dec)}
+\]
+
+---
+
+\[
+V_{OUT} = \frac{741}{1023} \times 1V = 0.7243\,V
+\]
+
+---
+
+✅ **Result:**
+When `OUT[9:0] = 2E5`, the analog output ≈ **0.724 V**, confirming correct D/A conversion.
+
 </details>
 
 ---
 
 
-> *All three blocks — Digital, Analog, and Timing — are functioning coherently, validating the complete SoC design from RTL to analog interface.*
+**All three blocks — Digital, Analog, and Timing — are functioning coherently, validating the complete SoC design from RTL to analog interface.**
 
 
 #### Troubleshooting ####
