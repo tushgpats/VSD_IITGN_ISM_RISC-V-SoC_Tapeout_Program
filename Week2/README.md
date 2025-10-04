@@ -178,4 +178,11 @@ gtkwave pre_synth_sim.vcd
 
 
 ## Acknowledgements ##
-www.Tutorialspoint.com [ https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_phase_locked_loop_ic.htm https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_digital_to_analog_converters.htm ]
+**www.Tutorialspoint.com** [ https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_phase_locked_loop_ic.htm https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_digital_to_analog_converters.htm ]
+
+**Hemanth Kumar's Repository** [https://github.com/hemanthkumardm/SFAL-VSD-SoC-Journey/tree/main/11.%20Fundamentals%20of%20SoC%20Design https://github.com/hemanthkumardm/SFAL-VSD-SoC-Journey/tree/main/12.%20VSDBabySoC%20Project]
+
+**Manili's Repository**https://github.com/manili/VSDBabySoC?tab=readme-ov-file
+
+
+
