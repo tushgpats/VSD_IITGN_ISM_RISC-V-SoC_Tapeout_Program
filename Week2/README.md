@@ -162,7 +162,6 @@ cd output
 <img width="800" height="600" alt="Screenshot from 2025-10-04 13-18-36" src="https://github.com/user-attachments/assets/5646f12a-8235-44e3-a36c-2fe9f7268738" />
 
 
-
 #### Simulation Waveforms ####
 
 We now use GTKWave to view the Waveforms.
@@ -176,6 +175,84 @@ gtkwave pre_synth_sim.vcd
 
 <img width="800" height="600" alt="Screenshot from 2025-10-04 13-16-34" src="https://github.com/user-attachments/assets/b84c82be-3c55-4bba-8d9d-e815b102e4f3" />
 
+##  VSDBabySoC Simulation Analysis using GTKWave
+
+The simulation demonstrates the working of the **VSDBabySoC**, which integrates three major components:
+**RVMYTH (RISC-V CPU Core)**, **AVSDPLL (Phase-Locked Loop)**, and **AVSDDAC (Digital-to-Analog Converter)**.  
+Each component plays a crucial role in this mixed-signal SoC, and their interactions can be observed in the waveform outputs generated through GTKWave.
+
+---
+
+<details>
+<summary> <b>RVMYTH (RISC-V CPU Core)</b></summary>
+
+The **RVMYTH CPU** acts as the brain of the SoC — executing instructions, reading and writing data, and producing digital outputs that drive the DAC.
+
+| **Signal Name** | **Description** | **What It Shows in GTKWave** |
+|------------------|------------------|-------------------------------|
+| `CPU_dmem_addr_a4[3:0]` | 4-bit data memory address bus. | Toggles rapidly — CPU accessing different memory locations. |
+| `CPU_dmem_rd_data_a5[31:0]` | 32-bit read data bus. | Initially undefined (`xxxx`), stabilizes once CPU reads valid data. |
+| `CPU_ld_data_a5[31:0]` | Load data into registers. | Reflects valid read data after each `rd_en` pulse. |
+| `clkP_CPU_dmem_rd_en_a5` | Read enable for data memory. | Pulses high when CPU requests a memory read. |
+| `clkP_CPU_rd_valid_a5` | Data valid signal. | Goes high when the read data is ready. |
+| `OUT[9:0]` | Digital output to DAC. | Represents processed 10-bit data for analog conversion. |
+
+ **Interpretation:**  
+When `rd_en` and `rd_valid` align, the CPU is completing a read-execute-write cycle.  
+The changes in `OUT[9:0]` reflect processed outputs sent to the DAC for conversion.
+
+</details>
+
+---
+
+<details>
+<summary>⚡ <b>AVSDPLL (Phase-Locked Loop)</b></summary>
+
+The **PLL** provides a clean, high-frequency system clock for synchronous operation.  
+It multiplies a low-frequency input (e.g., 5 MHz or 12.5 MHz) to generate a stable higher frequency (40 MHz – 100 MHz).
+
+| **Signal Name** | **Description** | **GTKWave Behavior** |
+|------------------|------------------|------------------------|
+| `REF` | Input reference clock. | Slow periodic waveform — baseline frequency. |
+| `VCO_IN` | VCO input signal. | High-frequency oscillation — shows multiplication effect. |
+| `CLK` | Output clock to SoC. | Stabilizes at ~40 MHz once PLL locks. |
+| `ENB_CP` | Charge-pump enable. | High during phase-correction phase. |
+| `ENB_VCO` | VCO enable. | Indicates active oscillation. |
+| `period` | Output clock period (ns). | ~35.4 ns corresponds to ~28–40 MHz. |
+| `refpd` | Reference phase difference. | Settles once phase lock achieved. |
+
+ **Interpretation:**  
+Once the PLL locks, the output `CLK` stabilizes and drives the CPU and DAC.  
+The `period` and `refpd` signals flatten, confirming stable frequency and phase.
+
+</details>
+
+---
+
+<details>
+<summary> <b>AVSDDAC (Digital-to-Analog Converter)</b></summary>
+
+The **DAC** converts 10-bit digital data from the CPU into analog voltages, enabling mixed-signal interfacing.
+
+| **Signal Name** | **Description** | **GTKWave Behavior** |
+|------------------|------------------|------------------------|
+| `D[9:0]` / `Dext[10:0]` | Digital input lines. | Changes with CPU outputs — triggers new analog values. |
+| `OUT` | Intermediate DAC output. | Shows step-like transitions of conversion. |
+| `OUT(real)` | Analog output voltage. | Smooth variations proportional to digital input. |
+| `VREFH` / `VREFL` | High and low voltage references. | Define the output voltage range (e.g., 0 V – 1 V). |
+| `EN` | Enable signal. | High when DAC is active. |
+| `NaN` | Undefined state indicator. | Appears during startup, clears once references stabilize. |
+
+ **Interpretation:**  
+The DAC continuously converts digital CPU outputs into analog voltages.  
+When `OUT[9:0] = 2E5`, the analog output reaches ~0.724 V — confirming correct D/A conversion.
+
+</details>
+
+---
+
+
+> *All three blocks — Digital, Analog, and Timing — are functioning coherently, validating the complete SoC design from RTL to analog interface.*
 
 
 #### Troubleshooting ####
